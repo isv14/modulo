@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tarjetes_flexbox</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*TITULO AUTOR h3{
+            width: 400px;
+        background:red
+        padding:0 50px;
+            
+        }*/
+        html {
+            min-height: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            font-family: "Georgia"cursive;
+            font-size: 18px;
+            background: linear-gradient(38deg, pink, aquamarine);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            padding: 2em 4em;
+            justify-content: center;
+
+        }
+
+        .dissenyador {
+            width: 20em;
+            background: rgba(240, 240, 240, 0.4);
+            border-radius: 10px;
+            margin: 1em;
+            /*SOMBRA CAJA*/
+            box-shadow: 4px 2px 25px pink;
+            display: flex;
+            flex-direction: column;
+        }
+        .dissenyador_img img{
+            border-radius: 10px 10px 0 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        header{
+            color:darkgrey;
+            display: flex;
+            margin: 0.5em 1em;
+            padding-bottom: 0.3em;
+            align-items: baseline;
+            justify-content: space-between;
+            border-bottom: 1px solid black; 
+        }
+        h3{
+            font-style: italic;
+            font-weight: bold;
+        }
+        span{
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+        .dissenyador_contingut{
+            flex-grow: 1;
+            hyphens:auto;
+            text-align: justify;
+            margin: 0.6em 1.3em;
+            padding-bottom: 0.2em;
+            font-size: 0.9em;
+            padding-top: 0.2em;
+            font-size: 0.9em;
+            line-height: 1.2em;
+        }
+        footer{
+            background:grey;
+            color:azure;
+            font-size:0.9em;
+            font-style:normal;
+            border-radius: 0 0 10px 10px;
+            padding: 0.7em;
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 16px;
+            }
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dissenyador">
+            <div class="dissenyador_img">
+                <img src="img/foto1.jpg" alt="Kelly Wearstler">
+            </div>
+            <header>
+                <h3>Kelly Wearstler</h3>
+                <span>1967</span>
+            </header>
+            <p class="dissenyador_contingut">
+                Diseñadora estadounidense . Después de fundar su propia firma de diseño Kelly Wearstler Interior Design (o KWID ) a mediados de la década de 1990, su trabajo subsiguiente dentro de la industria hotelera construyó su reputación en California, con The New Yorker apodando a ella "la gran dama presidenta de West Coast diseño de interiores." Según The New York Times , "sus diseños juguetones y elegantemente exagerados para el Avalon Beverly Hills cambiaron el aspecto de los hoteles boutique de todo el mundo"y sus diseños para la cadena de hoteles Viceroy a principios de la década de 2000 también se han destacado por su influencia en la industria del diseño. Ella ha diseñado propiedades para clientes como Gwen Stefani , Cameron Diaz y Stacey Snider ,y sirvió como juez en todos los episodios de Bravo 's Top Design concurso de la realidad en el año 2007 y 2008.
+                Wearstler ha lanzado cuatro libros, y su primero, Modern Glamour , fue nombrado best seller por Los Angeles Times en 2006. Como otras publicaciones incluyen su segundo libro.
+            </p>
+            <footer class="dissenyador_peu">
+                "Ama el color, toma riesgos, sé curioso. Sólo vale la pena aprender lo que no se puede explicar."
+            </footer>
+        </div>
+        <div class="dissenyador">
+            <div class="dissenyador_img">
+                <img src="img/foto2.jpg" alt="">
+            </div>
+            <header>
+                <h3>Kelly Hoppen</h3>
+                <span>1959</span>
+            </header>
+            <p class="dissenyador_contingut">
+                Nacida el 28 de julio de 1959, es una diseñadora de interiores británica nacida en Sudáfrica , autora y propietaria de Kelly Hoppen Interiors. De 2013 a 2015 ella era un "Dragón" en la BBC Two 's Dragons' Den . En 2011, Hoppen presentó su propio programa en el Canal 5 llamado Superior Interiors con Kelly Hoppen . [9] Hoppen fue un dragón en la BBC Two 's Dragons' Den [10] de 2013 a 2015. [11] En 2016, Kelly tuvo un cameo en Absolutely Fabulous: The Movie. Hoppen apareció como juez invitado en el episodio final de la tercera serie de The Great Interior Design Challenge de BBC Two . En 2017, reemplazó a Sophie Robinson como jueza junto a Daniel Hopwood para la serie cuatro.
+                En 1996, Hoppen fue galardonado con el Andrew Martin Interior Design Award por Andrew Martin International. Posteriormente ganó otros premios, entre ellos European Woman Of Achievement en 2007, ELLE Decoration Award y Grazia Designer of the Year.
+                
+
+Kelly también es un GRAN Embajador designado por el Gobierno para el Reino Unido.
+
+
+            </p>
+            <footer class="dissenyador_peu">
+                    “Una casa es donde se tiene que sentir alegría. Se debe percibir que es su propio espacio; que refleja el espíritu, la vida y el amor de las personas que viven ahí”.
+                </footer>
+        </div>
+    </div>
+    
+</body></html>
